@@ -1,7 +1,14 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import main from "./main";
+import { home } from "./home";
 
 function App() {
+  React.useEffect(() => {
+    main();
+    home();
+  }, []);
+
   return (
     <>
       <div className="scroll-top flex-center">
