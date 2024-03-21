@@ -1,0 +1,82 @@
+[
+  {
+    "imagen": "./Imgs/b001.jpg",
+    "tittle": "Golden Odyssey",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/b002.jpg",
+    "tittle": "Black pearl",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/b003.jpg",
+    "tittle": "Sea Senora",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/b004.jpg",
+    "tittle": "Fish Tales",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/b005.jpg",
+    "tittle": "Island Time",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/b006.jpg",
+    "tittle": "Cozmic Sunny",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/y007.jpg",
+    "tittle": "Fast Serenity",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  },
+  {
+    "imagen": "./Imgs/y008.jpg",
+    "tittle": "Cozmic Sunny",
+    "value": "$140",
+    "duracion": "Per Day",
+    "personas": "12 Guests",
+    "bedrooms": "2 Master Bedroom",
+    "largo": "44 Feet",
+    "info": "Sun Deck, Kitchen ..."
+  }
+]

@@ -1,64 +1,4 @@
 export function home() {
-  // ---------------- Home Page ---------------------//
-  // ---------------- landing Page change ---------------------//
-  let textBox = document.querySelectorAll(".textbox");
-  let activeBox = 0;
-  let imgs = ["url(../Imgs/Main.jpg)", "url(../Imgs/Main1.jpg)"];
-  let angles = document.querySelectorAll(".angles");
-  let landing = document.querySelector(".landing");
-  let activeImg = 0;
-
-  landing.style.cssText = `background-image:${imgs[activeImg]};`;
-
-  // add click event to the angles
-  angles.forEach((i) => {
-    i.addEventListener("click", (e) => {
-      if (e.currentTarget === angles[0]) {
-        checkRightArrow();
-      } else {
-        checkLeftArrow();
-      }
-      landingChange();
-    });
-  });
-
-  function landingChange() {
-    landing.style.backgroundImage = imgs[activeImg];
-    textBox.forEach((box) => {
-      box.style.transition = "none";
-      box.classList.remove("active");
-    });
-    textBox[activeBox].classList.add("active");
-    textBox[activeBox].style.cssText =
-      "transition: 1s ease-in-out; transition-delay:0.1s; transition-property:opacity,left";
-  }
-  landingChange();
-
-  // check the counter in left click
-  function checkLeftArrow() {
-    if (activeBox === 0) {
-      activeBox = textBox.length - 1;
-    } else activeBox--;
-    if (activeImg === 0) {
-      activeImg = imgs.length - 1;
-    } else activeImg--;
-  }
-
-  // check the counter in right click
-  function checkRightArrow() {
-    if (activeImg === imgs.length - 1) {
-      activeImg = 0;
-    } else activeImg++;
-    if (activeBox === textBox.length - 1) {
-      activeBox = 0;
-    } else activeBox++;
-  }
-
-  // set the interval change
-  setInterval(function () {
-    checkRightArrow();
-    landingChange();
-  }, 5000);
   // ---------------- Premium section ---------------------//
   let slideHolder = document.querySelector(".options-holder"),
     slideItem = slideHolder.querySelectorAll(".opt"),
@@ -81,35 +21,6 @@ export function home() {
   }
   buttons[0].onclick = next;
   buttons[1].onclick = prev;
-
-  // ---------------- Gallery section ---------------------//
-
-  let zoomIcons = document.querySelectorAll(".zoom");
-
-  zoomIcons.forEach((i) => {
-    i.addEventListener("click", (e) => {
-      let overLay = document.createElement("div");
-      overLay.className = "galeryOverLay";
-      document.body.append(overLay);
-      // -------------------------------------------------
-      let imgBox = document.createElement("div");
-      imgBox.className = "imgBox";
-      overLay.append(imgBox);
-      // -------------------------------------------------
-      let activeImage = document.createElement("img");
-      activeImage.src = e.currentTarget.previousElementSibling.src;
-      activeImage.className = "activeImage";
-      imgBox.append(activeImage);
-      // -------------------------------------------------
-      let closeButton = document.createElement("span");
-      closeButton.className = "closeSpan";
-      closeButton.textContent = "X";
-      imgBox.append(closeButton);
-      closeButton.onclick = function () {
-        overLay.remove();
-      };
-    });
-  });
 
   // ---------------- What people say section ---------------------//
 

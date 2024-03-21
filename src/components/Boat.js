@@ -1,36 +1,53 @@
-export default function Boat() {
+import data from "../data/boats.json";
+
+export default function Products(props) {
+  const handleClick = props.manejar;
   return (
-    <div className="card">
-      <div className="img">
-        <img src="./Imgs/b001.jpg" alt="Boat" />
+    <section className="cards">
+      <div className="container">
+        <article className="cards-holder">
+          {data.map((d) => {
+            return (
+              <div className="card">
+                <div className="img">
+                  <img src={d.imagen} alt="Boat" />
+                </div>
+                <div className="info flex-between">
+                  <a href="#" className="name">
+                    {d.tittle}
+                  </a>
+                  <div className="price">
+                    <span className="currency">{d.value}</span>
+                    <span className="duration">{d.duracion}</span>
+                  </div>
+                </div>
+                <div className="data flex-between">
+                  <div className="guest inf">
+                    <i className="fas fa-user" />
+                    <span>{d.personas}</span>
+                  </div>
+                  <div className="beds inf">
+                    <i className="fas fa-bed" />
+                    <span> {d.bedrooms} </span>
+                  </div>
+                  <div className="feets inf">
+                    <i className="fas fa-arrows-h" />
+                    <span>{d.largo}</span>
+                  </div>
+                  <div className="entertain inf">
+                    <i className="far fa-columns" />
+                    <span>{d.info}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </article>
+
+        <button className="btn btn-main subir" onClick={handleClick}>
+          VIEW ALL BOATS
+        </button>
       </div>
-      <div className="info flex-between">
-        <a href="#" className="name">
-          Golden Odyssey
-        </a>
-        <div className="price">
-          <span className="currency">$140</span>
-          <span className="duration">Per Day</span>
-        </div>
-      </div>
-      <div className="data flex-between">
-        <div className="guest inf">
-          <i className="fas fa-user" />
-          <span>12 Guests</span>
-        </div>
-        <div className="beds inf">
-          <i className="fas fa-bed" />
-          <span> 2 Master Bedroom </span>
-        </div>
-        <div className="feets inf">
-          <i className="fas fa-arrows-h" />
-          <span> 44 Feet</span>
-        </div>
-        <div className="entertain inf">
-          <i className="far fa-columns" />
-          <span>Sun Deck, Kitchen ...</span>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }

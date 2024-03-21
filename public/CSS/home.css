@@ -207,6 +207,8 @@
 /* start deal of the week */
 .deal {
   padding: 45px 0;
+  margin-bottom: 40px;
+  background-image: url(../Imgs/fleet.jpg);
 }
 .deal .day-deal {
   background-color: var(--main-color);

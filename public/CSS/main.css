@@ -224,6 +224,7 @@ div.styling.blue {
 /* start diffrent landing  */
 .landing.diffrent {
   height: 60vh;
+  background-image: url(../Imgs/Main1.jpg);
 }
 .landing.diffrent .page-name {
   position: absolute;
