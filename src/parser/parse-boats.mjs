@@ -16,21 +16,25 @@ for (let i = 0; i < details.length; i++) {
   const tipo = nodo.children[0].children[1].textContent;
 
   const boatFeats = nodo.children[1];
-  let make = "";
+  let make = "",
+    engine = "";
   for (let j = 0; j < boatFeats.children.length; j++) {
     const bf = boatFeats.children[j];
 
-    const n = bf.children[0];
-    const v = bf.children[1];
+    const n = bf.children[0].textContent;
+    const v = bf.children[1].textContent;
 
     if (n === "Make") {
       make = v;
+    }
+    if (n.startsWith("Engine")) {
+      engine = v;
     }
   }
 
   // console.log(nombre.textContent);
 
-  const obj = { nombre, tipo, make };
+  const obj = { nombre, tipo, make, engine };
   botes.push(obj);
 }
 
