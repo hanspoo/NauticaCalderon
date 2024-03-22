@@ -11,6 +11,7 @@ import Footer from "./components/footer";
 import MainComponent from "./components/maincomponent";
 import BoatsPage from "./components/boatslistpage";
 import BoatDetails from "./components/Boatdetails";
+import Products from "./components/Boat";
 
 function App() {
   React.useEffect(() => {
@@ -19,13 +20,26 @@ function App() {
   const [principalPage, setPrincipalPage] = useState(true);
 
   const handleClick = () => {
+    setPrincipalPage(true);
+    setProductsPage(false);
+    setDetailsPage(false);
+  };
+
+  const [productsPage, setProductsPage] = useState(false);
+
+  const mostrarPaginaProductos = () => {
+    setProductsPage(true);
+    setDetailsPage(false);
     setPrincipalPage(false);
   };
 
   const [detailsPage, setDetailsPage] = useState(false);
 
-  const mostrarDetalles = () => {
+  const mostrarPaginaDetalles = () => {
     setDetailsPage(true);
+    setProductsPage(false);
+
+    setPrincipalPage(false);
   };
 
   return (
@@ -35,16 +49,20 @@ function App() {
           <i className="fa-solid fa-arrow-up" />
         </span>
       </div>
-      <button onClick={mostrarDetalles}>mostrar</button>
+      <button onClick={mostrarPaginaProductos}>mostrar producto</button>
+      <button onClick={mostrarPaginaDetalles}>mostrar detalles</button>
+      <button onClick={handleClick}>mostrar principal</button>
       <Header></Header>
-
+      {/* 
       {principalPage ? (
         <MainComponent manejar={handleClick}></MainComponent>
       ) : (
         <BoatsPage></BoatsPage>
-      )}
+      )} */}
 
-      {detailsPage ? <BoatDetails></BoatDetails> : ""}
+      {principalPage && <MainComponent manejar={handleClick}></MainComponent>}
+      {productsPage && <BoatsPage />}
+      {detailsPage && <BoatDetails></BoatDetails>}
 
       <Footer></Footer>
 

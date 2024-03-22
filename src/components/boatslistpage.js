@@ -1,5 +1,6 @@
 import { boatlist } from "../boat-list";
 import React, { useState } from "react";
+import main from "../main";
 
 export default function BoatsPage(props) {
   React.useEffect(() => {

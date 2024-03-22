@@ -1,3 +1,6 @@
+import Carousel from "react-bootstrap/Carousel";
+import { boatsinfo } from "../data/boatdetails.js";
+
 export default function BoatDetails() {
   return (
     <>
@@ -101,37 +104,47 @@ export default function BoatDetails() {
         <section className="details">
           <div className="container flex-start">
             <article className="features">
-              <div className="active-pic" id="active-pic">
-                <button className="arrow right">
-                  <i className="fa-solid fa-chevron-right" />
-                </button>
-                <button className="arrow left">
-                  <i className="fa-solid fa-chevron-left" />
-                </button>
-              </div>
+              <Carousel>
+                {boatsinfo.map((i) => {
+                  return (
+                    <Carousel.Item>
+                      <img
+                        className="d-block w-100"
+                        src={i.img}
+                        alt="slide"
+                        key={i.id}
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
               <div className="pics-holder">
                 <div className="pics-slider flex-between" id="pics-slider">
-                  <img className="slide-item" src="../Imgs/1.jpg" alt="Img" />
-                  <img className="slide-item" src="../Imgs/2.jpg" alt="Img" />
-                  <img className="slide-item" src="../Imgs/3.jpg" alt="Img" />
-                  <img className="slide-item" src="../Imgs/4.jpg" alt="Img" />
-                  <img className="slide-item" src="../Imgs/5.jpg" alt="Img" />
-                  <img className="slide-item" src="../Imgs/6.jpg" alt="Img" />
+                  {boatsinfo.map((i) => {
+                    return (
+                      <img
+                        className="slide-item"
+                        src={i.img}
+                        alt="Img"
+                        key={i.id}
+                      />
+                    );
+                  })}
                 </div>
               </div>
               <article className="boat-specific">
-                <h3>Boat Specifications</h3>
+                <h3>Especificaciones técnicas</h3>
                 <div className="Specifications">
                   <div className="feat">
-                    <span className="key">Make:</span>
-                    <span className="value">Celebrations</span>
+                    <span className="key">Ubicación:</span>
+                    <span className="value">Pucón, IX Araucanía </span>
                   </div>
                   <div className="feat">
-                    <span className="key">Hull Material:</span>
-                    <span className="value">Fiberglass</span>
+                    <span className="key">Publicado:</span>
+                    <span className="value">19/02/2024</span>
                   </div>
                   <div className="feat">
-                    <span className="key">Manufacturer:</span>
+                    <span className="key"></span>
                     <span className="value">Caterpillar</span>
                   </div>
                   <div className="feat">
@@ -180,8 +193,8 @@ export default function BoatDetails() {
                     <li className="Reviews">Reviews</li>
                   </ul>
                 </div>
-                <div className="view-area">
-                  <div className="overview-click item active">
+                <div className="">
+                  <div>
                     <p>
                       Edipisicing eiusmod tempor incididunt labore sed dolore
                       magna aliqa enim ipsum ad minim veniams quis nostrud
@@ -287,9 +300,7 @@ export default function BoatDetails() {
             <article className="seller-info">
               <div className="price">
                 <div className="holder">
-                  <h2>
-                    $120 <span>/ per day</span>
-                  </h2>
+                  <h2>$ 42.200.000 </h2>
                 </div>
                 <div className="payment">
                   <img src="../Imgs/payment-icon_02.png" alt="Payment" />
@@ -300,12 +311,12 @@ export default function BoatDetails() {
                 <div className="name flex-between">
                   <img src="../Imgs/yteam001.jpg" alt="Seller" />
                   <div className="data">
-                    <span className="seller-name">Jane William</span>
-                    <span className="Membership">Member Since April 2013</span>
+                    <span className="seller-name">Carlos Calderón</span>
+                    <span className="Membership">Dueño NauticaCalderon</span>
                   </div>
                 </div>
                 <div className="number-social">
-                  <span className="contact">Contact Seller</span>
+                  <span className="contact">Número de contacto </span>
                   <span>
                     <a href="tel:+1 (258) 403 7961" className="number">
                       1 (258) 403 7961
@@ -332,20 +343,20 @@ export default function BoatDetails() {
                 </div>
               </div>
               <div className="contact-seller">
-                <h3>Message Seller</h3>
+                <h3>Mensaje al vendedor</h3>
                 <form action="#">
                   <input
                     type="text"
                     name="name"
                     id="client-name"
-                    placeholder="Name"
+                    placeholder="Nombre"
                     required=""
                   />
                   <textarea
                     name="message"
                     id="message"
                     rows={10}
-                    placeholder="Drop Your Message"
+                    placeholder="Deja Tu Mensaje"
                     required=""
                     defaultValue={""}
                   />

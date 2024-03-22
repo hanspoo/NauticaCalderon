@@ -12,12 +12,13 @@ import { home } from "../home.js";
 import { blogpost } from "../blog-post.js";
 import { bookingform } from "../booking-form.js";
 import Landing from "./landing.js";
+import main from "../main.js";
 
 export default function MainComponent(props) {
   React.useEffect(() => {
     home();
     blogpost();
-
+    main();
     bookingform();
   }, []);
 
