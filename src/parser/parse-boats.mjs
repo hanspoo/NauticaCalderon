@@ -14,9 +14,29 @@ for (let i = 0; i < details.length; i++) {
   const nodo = details[i];
   const nombre = nodo.children[0].children[0].textContent;
   const tipo = nodo.children[0].children[1].textContent;
+
+  const boatFeats = nodo.children[1];
+  let make = "";
+  for (let j = 0; j < boatFeats.children.length; j++) {
+    const bf = boatFeats.children[j];
+
+    const n = bf.children[0];
+    const v = bf.children[1];
+
+    if (n === "Make") {
+      make = v;
+    }
+  }
+
   // console.log(nombre.textContent);
 
-  botes.push({ nombre, tipo });
+  const obj = { nombre, tipo, make };
+  botes.push(obj);
 }
 
 console.log(JSON.stringify(botes));
+
+let a = {
+  nombre: "Lucas",
+  edad: 18,
+};
