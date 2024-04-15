@@ -2,7 +2,7 @@ export default function Testimonies() {
   return (
     <section className="people-says">
       <div className="head">
-        <h2>What People Says..</h2>
+        <h2>Nuestros Clientes</h2>
         <img src="./Imgs/decoreGold.png" alt="img" />
       </div>
       <article className="reviews-container">

@@ -7,9 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --main-color: #30a8d5;
+  --main-color: #ebb552;
   --under-line-color: #e4d183;
   --boatdetails-submit: #e2b71c;
+  --footer: #0f0f20;
 }
 * {
   margin: 0;
@@ -362,7 +363,7 @@ header .container .data .phone {
 
 .landing .container nav.scrolling {
   position: fixed;
-  background-color: rgb(255 255 255 /0.8);
+  background-color: rgb(255 255 255 /0.9);
   width: 100%;
   left: 0;
   top: 0;
@@ -405,9 +406,12 @@ header .container .data .phone {
   .landing .container nav .bars-icon {
     display: block;
   }
+  .logo {
+    width: 200px !important;
+  }
 }
-.landing nav .logo {
-  width: 120px;
+.logo {
+  width: 240px;
 }
 .landing nav .links {
   flex: 1;
@@ -642,8 +646,11 @@ header .container .data .phone {
     line-height: 1.8;
   }
 }
-.landing .container .textbox .lux {
+.lux {
   color: var(--main-color);
+}
+.landing .container .textbox .dark {
+  color: #2fabf3;
 }
 
 .landing .container .textbox .explore {
@@ -669,9 +676,14 @@ header .container .data .phone {
 /*  start Providing section */
 .providing {
   margin-top: 200px;
+  margin-bottom: 110px;
 }
 /* at mob screens */
 @media (max-width: 991px) {
+  .providing {
+    margin-bottom: 50px;
+  }
+
   .providing .main-content {
     flex-direction: column;
   }
@@ -691,7 +703,6 @@ header .container .data .phone {
     text-align: center;
   }
   .providing .main-content .img img {
-    width: 70%;
   }
 }
 /* at small screens */
@@ -722,7 +733,7 @@ header .container .data .phone {
   }
 }
 .providing .main-content .text p {
-  margin: 20px 0;
+  margin: 25px 0;
   line-height: 1.8;
   font-size: 13px;
   font-weight: 500;
@@ -743,7 +754,7 @@ header .container .data .phone {
   color: #777;
 }
 .providing .sign {
-  margin-top: 19px;
+  margin-top: 39px;
 }
 .providing .sign p {
   margin-left: 19px;
@@ -939,9 +950,9 @@ input[type="submit"] {
 /* end winners */
 /* start footer */
 footer {
-  background-color: #222;
+  background-color: var(--footer);
   padding: 80px 25px;
-  border-bottom: 1px solid rgb(255 255 255 /0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 footer .container {
   display: grid;
@@ -956,7 +967,7 @@ footer .container {
   }
 }
 footer .col > *:not(ul) {
-  color: rgb(255 255 255 /0.5);
+  color: (255 255 255 /0.5);
 }
 footer .container .col:not(:first-child) {
   margin-top: 10px;
@@ -988,7 +999,7 @@ footer .subscripe-mail .inside-input {
   font-size: 18px;
 }
 footer .col:first-child input {
-  background-color: #2a2e2f;
+  background-color: #060613;
   outline: none;
   border: 2px solid transparent;
   padding: 15px;
@@ -1027,7 +1038,7 @@ footer .col li {
   transition: 0.2s;
 }
 footer .col li a {
-  color: rgb(255 255 255 / 0.8);
+  color: rgb(255 255 255 / 9);
 }
 footer .col li::before {
   font-family: "Font Awesome 6 Free";
@@ -1039,7 +1050,7 @@ footer .col li::before {
   font-weight: bold;
   font-size: 12px;
   transition: 0.2s;
-  color: rgb(255 255 255 / 0.8);
+  color: rgb(255 255 255 / 0.9);
 }
 footer .col li a:hover {
   color: var(--main-color);
@@ -1079,9 +1090,10 @@ footer .social i:hover {
   color: gold;
 }
 footer .confirm {
-  background: #222;
+  background-color: #060613;
   padding: 15px 20px;
-  border: 1px solid rgb(255 255 255/0.8);
+  border: 1px solid rgb(255 255 255/0.9);
+  color: white;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
@@ -1095,7 +1107,7 @@ footer .confirm:hover {
 .by-me {
   text-align: center;
   color: white;
-  background-color: #222;
+  background-color: #0f0f20;
   padding: 50px;
 }
 .by-me .developer {
@@ -1235,4 +1247,21 @@ button.drop-down ul li:hover {
 .search-overLay .close-Overlay:hover {
   background-color: rgb(210, 14, 14);
   color: #fff;
+}
+
+.blue {
+  background-color: var(--footer);
+}
+
+.claro {
+  background-color: #f2f6f7;
+  opacity: 0.9;
+}
+
+.aBootstrap {
+  display: inline-block;
+  color: white;
+  padding: 6px;
+  font-size: 12px;
+  font-weight: bold;
 }

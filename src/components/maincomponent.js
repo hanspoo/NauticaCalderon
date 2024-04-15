@@ -8,17 +8,16 @@ import VideoSection from "./videosection";
 import Info from "./info";
 import Products from "./Boat";
 import React from "react";
-import { home } from "../home.js";
-import { blogpost } from "../blog-post.js";
-import { bookingform } from "../booking-form.js";
+import { home } from "../jspelado/home.js";
+import { blogpost } from "../jspelado/blog-post.js";
+import { bookingform } from "../jspelado/booking-form.js";
 import Landing from "./landing.js";
-import main from "../main.js";
 
 export default function MainComponent(props) {
   React.useEffect(() => {
     home();
     blogpost();
-    main();
+
     bookingform();
   }, []);
 
@@ -27,19 +26,25 @@ export default function MainComponent(props) {
   return (
     <>
       {" "}
+      <div className="scroll-top flex-center">
+        <span>
+          <i className="fa-solid fa-arrow-up" />
+        </span>
+      </div>
       <Landing></Landing>
       <SelectBox></SelectBox>
       <Info></Info>
       <section className="fleet" id="fleet">
         <article className="text">
-          <h2>Fleet of Luxury Boats</h2>
-          <button className="btn btn-main" onClick={manejar}>
-            hola mundo
-          </button>
+          <h2>
+            <span className="bold-head">Explora Nuestras Lanchas </span>
+          </h2>
+
           <p>
-            Dolore magna aliqua enim ad minim veniam, quis nostrud exercitation
-            aliquip duis aute irure dolorin reprehenderits vol dolore fugiat
-            nulla pariatur excepteur sint occaecat cupidatat.
+            Explora nuevas aguas con nuestras lanchas cuidadosamente
+            seleccionadas. Encontramos las mejores embarcaciones para ti,
+            ofreciendo calidad y rendimiento excepcionales a precios
+            competitivos.
           </p>
           <img src="./Imgs/decoreGold.png" alt="decore" />
         </article>
@@ -47,11 +52,8 @@ export default function MainComponent(props) {
       </section>
       <Products manejar={manejar} />
       <Oferta></Oferta>
-      <Services></Services>
-      <VideoSection></VideoSection>
       <FormFaqs></FormFaqs>
       <Testimonies></Testimonies>
-      <News></News>
     </>
   );
 }

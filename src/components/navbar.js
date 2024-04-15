@@ -69,12 +69,6 @@ export default function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="form">
-        <i className="fa-solid fa-magnifying-glass search" id="search" />
-        <a href="#book-now" className="book main">
-          BOOK NOW
-        </a>
-      </div>
     </nav>
   );
 }

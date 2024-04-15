@@ -1,4 +1,4 @@
-import main from "../main";
+import main from "../jspelado/main";
 import NavBar from "./navbar";
 
 export default function Landing() {
@@ -8,21 +8,22 @@ export default function Landing() {
         <NavBar></NavBar>
 
         <section className="textbox-holder">
-          <article className="textbox">
-            <span>Your Dream Boats </span>
+          <article className="textbox ">
+            <span>Vive Un Sueño </span>
             <p>
-              Most Realiable <br />
-              <span className="lux">Luxury</span> Boat Rental
+              Navega y Disfruta
+              <br />
+              <span className="lux">Inicia </span> Con Nosotros
             </p>
             <a href="#" className="explore">
-              Explore Now{" "}
+              Explorar Ahora{" "}
             </a>
           </article>
           <article className="textbox">
-            <span>Your Dream Boats </span>
+            <span>Recorre Las Aguas </span>
             <p>
-              Most Realiable <br />
-              <span className="lux">Luxury</span> Boat Rental
+              Las Más Confiables <br />
+              <span className="dark">Lanchas</span> De Pucón
             </p>
             <a href="#" className="explore">
               Explore Now{" "}

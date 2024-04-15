@@ -4,11 +4,10 @@ export default function FormFaqs() {
       <div className="container flex-start">
         <article className="book-form">
           <div className="book-head">
-            <h1>Booking Form</h1>
+            <h1>Formulario De Contacto</h1>
             <p>
-              Dolore magna aliqua enim ad minim veniam, quis
-              nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum
-              dolor sit amet.
+              ¿Tiene alguna duda? ¡Déjenos ayudarlo! Complete este formulario y
+              estaremos encantados de responder a sus consultas.
             </p>
             <img src="./Imgs/decoreGold.png" alt="Img" />
           </div>
@@ -63,7 +62,7 @@ export default function FormFaqs() {
         </article>
         <article className="FAQ">
           <div className="book-head">
-            <h1>Boat Rental FAQ’s</h1>
+            <h1>Preguntas Frecuentes</h1>
             <p>
               Dolore magna aliqua enim ad minim veniam, quis
               nostrudreprehenderits dolore fugiat nulla pariatur lorem ipsum

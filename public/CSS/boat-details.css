@@ -1,11 +1,15 @@
 /* start details  */
+.excepcionpadding {
+  padding-top: 0 !important;
+}
+
 .details {
   padding: 100px 0;
 }
 /* at mobile screens */
 @media (max-width: 767px) {
   .details {
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }
 /* at mobile and small screens */
