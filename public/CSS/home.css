@@ -207,7 +207,7 @@
 /* start deal of the week */
 .deal {
   padding: 45px 0;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
   background-image: url(../Imgs/fleet.jpg);
 }
 .deal .day-deal {
@@ -223,17 +223,25 @@
   }
 }
 .deal .day-deal:hover {
-  background-color: #0ecdc2;
+  background-color: #2fabf3;
 }
 .deal .day-deal .deal-content {
   flex-basis: 65%;
   color: white;
   padding-left: 15px;
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  .deal .day-deal .deal-content {
+    margin-left: 15;
+  }
 }
 /* at mobile screens */
 @media (max-width: 767px) {
   .deal .day-deal .deal-content {
     margin-top: 25px;
+    margin-left: 0;
   }
 }
 /* at small screens */
@@ -784,9 +792,22 @@
   height: 70vh;
   background-image: url(../Imgs/what-people.jpg);
   position: relative;
-  margin: 80px 0;
+  margin-top: 100px;
   padding: 80px 0;
+  margin-bottom: 120px;
 }
+
+@media (max-width: 800px) {
+  .people-says {
+    margin-bottom: 70px !important;
+    height: 800px;
+    margin-top: 0px;
+  }
+  .people-says .reviews-container {
+    margin-top: 30px !important;
+  }
+}
+
 .people-says::before {
   position: absolute;
   content: "";

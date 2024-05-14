@@ -28,6 +28,7 @@ export default function Info() {
               <p>Pucón, Región De La Araucanía</p>
             </article>
           </article>
+
           <article className="img col">
             <img src="/Imgs/lanchasinfo3(1).png" alt="Img" />
           </article>

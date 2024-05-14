@@ -499,7 +499,7 @@ header .container .data .phone {
   .landing nav .links {
     position: fixed;
     justify-content: flex-start;
-    background-color: black;
+    background-color: var(--footer);
     padding: 25px;
     height: 100%;
     width: 50%;
@@ -798,11 +798,7 @@ header .container .data .phone {
 /*  end Providing section */
 /* start booking */
 /* at small and mobile screens */
-@media (min-width: 992px) {
-  .booking .container {
-    max-height: 667px;
-  }
-}
+
 /* at mobile screens */
 @media (max-width: 767px) {
   .booking .container {
@@ -811,8 +807,14 @@ header .container .data .phone {
   }
 }
 .booking .container .FAQ,
-.booking .container .book-form {
+.booking .container {
   flex-basis: 48%;
+  margin-bottom: 40px;
+}
+
+.book-form {
+  flex-basis: 48%;
+  margin-bottom: 30px;
 }
 .booking .container .FAQ-holder {
   margin-top: 10px;
@@ -1264,4 +1266,42 @@ button.drop-down ul li:hover {
   padding: 6px;
   font-size: 12px;
   font-weight: bold;
+}
+
+gmp-map {
+  height: 100%;
+}
+
+#conte {
+  height: 330px;
+  width: fit-content;
+}
+
+.inputcontacto {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  margin: 10px 0;
+  outline: none;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+
+.botoncontacto {
+  width: 100%;
+  padding: 15px 35px !important;
+  border: none;
+  border-radius: 5px;
+  color: white !important;
+  font-weight: 600 !important;
+  transition: 0.2s;
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin-bottom: 50;
+  background-color: var(--main-color) !important;
 }

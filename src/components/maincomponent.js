@@ -9,14 +9,13 @@ import Info from "./info";
 import Products from "./Boat";
 import React from "react";
 import { home } from "../jspelado/home.js";
-import { blogpost } from "../jspelado/blog-post.js";
+
 import { bookingform } from "../jspelado/booking-form.js";
 import Landing from "./landing.js";
 
 export default function MainComponent(props) {
   React.useEffect(() => {
     home();
-    blogpost();
 
     bookingform();
   }, []);
@@ -34,6 +33,7 @@ export default function MainComponent(props) {
       <Landing></Landing>
       <SelectBox></SelectBox>
       <Info></Info>
+      <div id="linklanchas" />
       <section className="fleet" id="fleet">
         <article className="text">
           <h2>

@@ -5,7 +5,7 @@ export default function Products(props) {
   const handleClick = props.manejar;
   return (
     <section className="cards">
-      <div className="container">
+      <div className="container mb-5 pb-4">
         <article className="cards-holder">
           {data.map((d) => {
             return (
@@ -20,21 +20,28 @@ export default function Products(props) {
                       <span className="currency">{d.value}</span>
                     </div>
                   </div>
+
                   <div className="data flex-between p-3">
                     <div className="guest inf">
-                      <i className="fas fa-user " />
-                      <span> {d.personas}</span>
+                      <i class="fa-regular fa-copyright m-1"></i>
+                      <span> {d.marca} </span>
                     </div>
+
+                    <div className="guest inf">
+                      <i class="fa-solid fa-clock m-1"></i>
+                      <span> {d.Horas}</span>
+                    </div>
+
                     <div className="beds inf">
-                      <i className="fas fa-bed" />
-                      <span> {d.bedrooms} </span>
+                      <i class="fa-solid fa-calendar-days m-1"></i>
+                      <span> {d.año} </span>
                     </div>
                     <div className="feets inf">
-                      <i className="fas fa-arrows-h" />
+                      <i className="fas fa-arrows-h m-1" />
                       <span>{d.largo}</span>
                     </div>
                     <div className="entertain inf">
-                      <i className="far fa-columns" />
+                      <i className="far fa-columns m-1" />
                       <span>{d.info}</span>
                     </div>
                   </div>
@@ -43,9 +50,6 @@ export default function Products(props) {
             );
           })}
         </article>
-        <button className="btn btn-main subir">
-          <Link to="/Listadebotes">VER TODAS</Link>
-        </button>
       </div>
     </section>
   );

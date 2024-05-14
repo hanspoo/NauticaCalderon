@@ -1,5 +1,6 @@
 import main from "../jspelado/main";
 import NavBar from "./navbar";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Landing() {
   return (
@@ -15,9 +16,9 @@ export default function Landing() {
               <br />
               <span className="lux">Inicia </span> Con Nosotros
             </p>
-            <a href="#" className="explore">
+            <Link smooth to="#linklanchas" className="explore">
               Explorar Ahora{" "}
-            </a>
+            </Link>
           </article>
           <article className="textbox">
             <span>Recorre Las Aguas </span>
@@ -25,9 +26,9 @@ export default function Landing() {
               Las Más Confiables <br />
               <span className="dark">Lanchas</span> De Pucón
             </p>
-            <a href="#" className="explore">
-              Explore Now{" "}
-            </a>
+            <Link smooth to="#linklanchas" className="explore">
+              Ver Lanchas{" "}
+            </Link>
           </article>
         </section>
         <i className="fa-solid fa-chevron-right angles" />

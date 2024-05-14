@@ -3,21 +3,32 @@ export default function Oferta() {
     <section className="deal ">
       <div className="container">
         <article className="day-deal flex-between">
-          <img src="./Imgs/deal-weak.jpg" alt="Deal" />
+          <div id="conte" className=" w-100">
+            <gmp-map
+              center="-39.28743580079332, -71.94501382656382"
+              zoom="12"
+              map-id="DEMO_MAP_ID"
+            >
+              <gmp-advanced-marker
+                position="-39.28743580079332, -71.94501382656382"
+                title="My location"
+              ></gmp-advanced-marker>
+            </gmp-map>
+          </div>
           <article className="deal-content">
-            <span className="head">Deal Of The Week</span>
-            <p className="boat-name">
-              DayDream Boat <span>Rent For $800 / HRS</span>
-            </p>
+            <span className="head">¿Donde Encontarnos?</span>
+            <p className="boat-name">Nuestra Ubicación</p>
             <p className="boat-data">
-              Builder /Model: French Waves | Type/Year: House Boat 2019 |
-              Length: 105 FT 32 M Charter Guests: 200 | Crew Members: 6
+              País: Chile | Región: Araucanía | Comuna: Pucón | Dirección:
+              Camino internacional 363 | Nos encontramos detras de la Petrobras
+              entrando por el camino de tierra.
             </p>
             <i className="fas fa-phone-alt" />
             <span>
               Booking a Charter Boat
               <span className="number">+1 755 302 8549</span>
             </span>
+            <div id="linkcontacto" />
           </article>
         </article>
       </div>

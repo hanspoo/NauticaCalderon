@@ -4,7 +4,6 @@ import main from "./jspelado/main";
 import { home } from "./jspelado/home";
 
 import { blogpost } from "./jspelado/blog-post";
-import { bookingform } from "./jspelado/booking-form";
 import Header from "./components/header";
 import Landing from "./components/landing";
 import Footer from "./components/footer";

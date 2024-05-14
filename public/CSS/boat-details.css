@@ -71,6 +71,8 @@
 }
 .details .container .features .boat-specific {
   padding: 40px 0;
+  padding-top: 20px !important
+  ;
 }
 /* at mobile and small screens */
 @media (max-width: 767px) {
@@ -273,7 +275,7 @@
   border: 1px solid rgb(0 0 0 /0.2);
 }
 .details .container .seller-info .seller-data .name {
-  background-color: var(--main-color);
+  background-color: var(--footer);
   margin-bottom: 15px;
   padding: 20px;
 }

@@ -1,40 +1,24 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 export default function SelectBox() {
   return (
-    <section className="select flex-between">
-      <article className="box">
-        <span>Select Boat Type</span>
-        <button className="drop-down">
-          <span className="selected" />
-          <ul className="options-list" data-index={0}>
-            <li selected="">Celebrations</li>
-            <li>Journey</li>
-            <li>Fishing</li>
-          </ul>
-        </button>
+    <section className="select flex-between p-5 col-lg-8 ">
+      <article className="text col-lg-8 ">
+        <h1 className="mt-0">
+          <span className="bold-head">¿Quieres Contactarnos? </span>
+        </h1>
+
+        <p>
+          Haz click en el boton amarillo para ir al formulario de contacto y
+          hácenos llegar tu mensaje, dudas o consultas ¡Que estas esperando es
+          gratis!
+        </p>
       </article>
-      <article className="box">
-        <span>Select a Model</span>
-        <button className="drop-down">
-          <span className="selected" />
-          <ul className="options-list" data-index={1}>
-            <li selected="">Model 1</li>
-            <li>Model 2</li>
-            <li>Model 3</li>
-          </ul>
-        </button>
-      </article>
-      <article className="box">
-        <span>Price Range</span>
-        <button className="drop-down">
-          <span className="selected" />
-          <ul className="options-list" data-index={2}>
-            <li selected="">Max $50 Perday</li>
-            <li>Max $100 Perday</li>
-            <li>Max $150 Perday</li>
-          </ul>
-        </button>
-      </article>
-      <button className="main search">Search</button>
+
+      <Link smooth to="#linkcontacto" className="main search p-4 ">
+        {" "}
+        Ir al Contacto
+      </Link>
     </section>
   );
 }

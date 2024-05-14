@@ -65,7 +65,7 @@ export function BoatDetails({ bote }) {
               <div className="pics-slider flex-between" id="pics-slider"></div>
             </div>
             <article className="boat-specific">
-              <h3>{bote.tittle}</h3>
+              <h3></h3>
               <div className="Specifications">
                 <div className="feat">
                   <span className="key">Marca:</span>
@@ -88,12 +88,12 @@ export function BoatDetails({ bote }) {
                   <span className="value">{bote.largo}</span>
                 </div>
                 <div className="feat">
-                  <span className="key">Vel Max:</span>
-                  <span className="value">{bote.velMax}</span>
+                  <span className="key">Horas De Uso:</span>
+                  <span className="value">{bote.Horas}</span>
                 </div>
                 <div className="feat">
-                  <span className="key">Length:</span>
-                  <span className="value">{bote.length}</span>
+                  <span className="key">Carga Max:</span>
+                  <span className="value">{bote.Carga}</span>
                 </div>
 
                 <div className="feat">
@@ -103,14 +103,12 @@ export function BoatDetails({ bote }) {
 
                 <div className="feat">
                   <span className="key">Tipo de combustible:</span>
-                  <span className="value">Diesel</span>
+                  <span className="value">{bote.tipoDeCombustible}</span>
                 </div>
               </div>
               <div className="datails-nav">
                 <ul className="nav flex-between">
                   <li className="OverView active">Descripción</li>
-                  <li className="Features-Services">Features &amp; Services</li>
-                  <li className="Reviews">Reviews</li>
                 </ul>
               </div>
               <div>
@@ -173,7 +171,7 @@ export function BoatDetails({ bote }) {
             </div>
             <div className="seller-data">
               <div className="name flex-between">
-                <img src="../Imgs/yteam001.jpg" alt="Seller" />
+                <img src="../Imgs/doncarlos.png" alt="Seller" />
                 <div className="data">
                   <span className="seller-name">Carlos Calderón</span>
                   <span className="Membership">Dueño NauticaCalderon</span>
@@ -183,7 +181,7 @@ export function BoatDetails({ bote }) {
                 <span className="contact">Número de contacto </span>
                 <span>
                   <a href="tel:+1 (258) 403 7961" className="number">
-                    1 (258) 403 7961
+                    +56 9 7563 3454
                   </a>
                 </span>
                 <div className="social">
