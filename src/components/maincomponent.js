@@ -48,7 +48,6 @@ export default function MainComponent(props) {
           </p>
           <img src="./Imgs/decoreGold.png" alt="decore" />
         </article>
-        <div className="styling top" />
       </section>
       <Products manejar={manejar} />
       <Oferta></Oferta>

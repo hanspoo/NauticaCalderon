@@ -3,11 +3,23 @@ import boatsinfo from "../data/boats.json";
 import NavBar from "../components/navbar";
 import NavBarBootstrap from "../components/BootstrapNav";
 import Footer from "../components/footer";
+import ClickToChat from "../components/utils/clicktochat";
 
 export function BoatDetails({ bote }) {
   return (
     <>
       <NavBarBootstrap></NavBarBootstrap>
+      <ClickToChat
+        numero="56975633454"
+        message="¡Hola! me gustaria consultar por una lancha"
+      >
+        {" "}
+        <img
+          alt="Chat on WhatsApp"
+          src="/Imgs/whatsapp.svg"
+          className="iconowsp"
+        ></img>
+      </ClickToChat>
       <section className="details mt-5">
         <div className="container flex-start">
           <article className="features">
@@ -180,11 +192,11 @@ export function BoatDetails({ bote }) {
               <div className="number-social">
                 <span className="contact">Número de contacto </span>
                 <span>
-                  <a href="tel:+1 (258) 403 7961" className="number">
+                  <a href="tel:+ (258) 403 7961" className="number ">
                     +56 9 7563 3454
                   </a>
                 </span>
-                <div className="social">
+                {/* <div className="social">
                   <a href="#">
                     {" "}
                     <i className="fa-brands fa-facebook-f" />
@@ -201,7 +213,7 @@ export function BoatDetails({ bote }) {
                     {" "}
                     <i className="fa-brands fa-instagram" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="contact-seller">

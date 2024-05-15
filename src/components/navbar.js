@@ -12,11 +12,7 @@ export default function NavBar() {
               Inicio
             </a>
           </li>
-          <li>
-            <a className="list-item" href="html/about-us.html">
-              Sobre Nosotros
-            </a>
-          </li>
+
           <li>
             <a className="list-item" href="#fleet">
               Nuestras Lanchas
@@ -24,7 +20,12 @@ export default function NavBar() {
           </li>
 
           <li>
-            <a className="list-item" href="html/contact-us.html">
+            <a className="list-item" href="#linkubicacion">
+              Ubicación
+            </a>
+          </li>
+          <li>
+            <a className="list-item" href="#linkcontacto">
               Contacto
             </a>
           </li>

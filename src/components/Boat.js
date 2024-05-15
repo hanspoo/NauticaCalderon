@@ -50,6 +50,7 @@ export default function Products(props) {
             );
           })}
         </article>
+        <div id="linkubicacion"></div>
       </div>
     </section>
   );

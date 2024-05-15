@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 export default function Footer() {
   return (
     <>
@@ -9,47 +11,37 @@ export default function Footer() {
               <img src="/Imgs/logo-light.png" alt="Logo" />
             </a>
             <p>
-              Ceipisicing elit sed do eiusmod tempor laboe dolore magna aliqa Ut
-              enim ad minim veniam quis nostrud exercitation ullam co laboris
-              nis aliquip comsecd.
+              Nos apasiona brindar experiencias incomparables en el agua. Nos
+              dedicamos a ofrecer embarcaciones de primera calidad en el centro
+              del sur de chile
             </p>
-            <h2>Subscribe Newsletter</h2>
-            <div className="subscripe-mail">
-              <input
-                type="email"
-                name="mail"
-                id="foot-mail"
-                placeholder="Drop your mail"
-              />
-              <i className="fa-solid fa-envelope-open inside-input" />
-            </div>
+            <h2 className="mt-0 ">¡Ven y conoce nuestras lanchas!</h2>
+
+            <Link smooth to="#linkcontacto" className="confirm ">
+              {" "}
+              AGENDAR VISITA
+            </Link>
           </div>
           <div className="col">
-            <h2>Boat Service</h2>
+            <h2>Secciones</h2>
             <ul>
               <li>
-                <a href="#"> Wedding Facility</a>
+                <a href="#"> Volver al Inicio</a>
               </li>
               <li>
-                <a href="#">Cruise and Marina</a>
+                <a href="#fleet"> Nuestras Lanchas</a>
               </li>
               <li>
-                <a href="#">Yacht Party Event</a>
+                <a href="#">Información de Nosotros</a>
               </li>
               <li>
                 <a href="#">Corporate Event</a>
               </li>
               <li>
-                <a href="#">Fishing Cruiser</a>
+                <a href="#">Ver los Testimonios</a>
               </li>
               <li>
-                <a href="#">Overnight Stay</a>
-              </li>
-              <li>
-                <a href="#">Birthday Party Yacht</a>
-              </li>
-              <li>
-                <a href="#">Boar Rentals</a>
+                <a href="#linkcontacto">Ir al Contacto</a>
               </li>
             </ul>
           </div>
@@ -71,32 +63,24 @@ export default function Footer() {
               <li>
                 <a href="#">Parts Shop</a>
               </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-              <li>
-                <a href="#">Buy or Sell Boats</a>
-              </li>
-              <li>
-                <a href="#">Featured Vehicles</a>
-              </li>
             </ul>
           </div>
           <div className="col">
-            <h2>Get In Touch</h2>
+            <h2>Ponte en Contacto</h2>
             <div className="location data">
               <i className="fa-solid fa-location-dot" />
-              <span>Fairview Ave, El Monte, CA 91732</span>
+              <span>Camino internacional, Pucón, Chile</span>
             </div>
             <div className="mail data">
               <i className="fa-solid fa-envelope" />
-              <a href="mailto:support@domain.com">support@domain.com</a>
+              <a href="mailto:support@domain.com">poowebcorp@gmail.com</a>
             </div>
             <div className="call data">
               <i className="fa-solid fa-headset" />
-              <span>Phone:</span> <a href="tel:+123-456 768"> +123-456-768</a>
+              <span>Phone:</span>{" "}
+              <a href="tel:+56932082293"> +56 9 3208 2293</a>
             </div>
-            <div className="social">
+            {/* <div className="social">
               <a href="#">
                 {" "}
                 <i className="fa-brands fa-facebook-f" />
@@ -113,14 +97,14 @@ export default function Footer() {
                 {" "}
                 <i className="fa-brands fa-instagram" />
               </a>
-            </div>
-            <button className="confirm">CONFIRM BOOKING</button>
+            </div> */}
+            {/* <button className="confirm">CONFIRM BOOKING</button> */}
           </div>
         </div>
       </footer>
 
       <section className="by-me">
-        2022
+        2024
         <a
           href="https://portfolio-ahmedfahiim.vercel.app/"
           className="developer"
@@ -128,7 +112,7 @@ export default function Footer() {
           {" "}
           PooWeb
         </a>{" "}
-        All rights reserved © .
+        Todos los derechos reservados © .
       </section>
       {/* search div */}
       <div className="search-overLay">

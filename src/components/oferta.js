@@ -25,8 +25,13 @@ export default function Oferta() {
             </p>
             <i className="fas fa-phone-alt" />
             <span>
-              Booking a Charter Boat
-              <span className="number">+1 755 302 8549</span>
+              llamar
+              <span className="number">
+                {" "}
+                <a href="tel:+56932082293" style={{ color: "white" }}>
+                  +56 9 3208 2293
+                </a>
+              </span>
             </span>
             <div id="linkcontacto" />
           </article>

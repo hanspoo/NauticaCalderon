@@ -3,6 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useState, useEffect } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 
 function NavBarBootstrap() {
   const [scroll, setScroll] = useState(false);
@@ -28,46 +30,22 @@ function NavBarBootstrap() {
           <i className="fa-solid fa-bars bars-icon burger-icon text-white sizeBurguer"></i>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-end" style={{ width: "100%" }}>
-            <Nav.Link href="#link">
-              {" "}
-              <a
-                className="list-item text-white aBootstrap"
-                href="html/about-us.html"
-              >
-                HOME
-              </a>
-            </Nav.Link>
-            <Nav.Link href="#link">
-              {" "}
-              <a className="list-item  aBootstrap" href="html/about-us.html">
-                ABOUT US
-              </a>
-            </Nav.Link>
-            <Nav.Link href="#link">
-              {" "}
-              <a className="list-item  aBootstrap" href="html/about-us.html">
-                OUR FLEET
-              </a>
-            </Nav.Link>
-            <Nav.Link href="#link">
-              {" "}
-              <a className="list-item  aBootstrap" href="html/about-us.html">
-                OUR TOURS
-              </a>
-            </Nav.Link>
-            <Nav.Link href="#link">
-              {" "}
-              <a className="list-item  aBootstrap" href="html/about-us.html">
-                NEWS
-              </a>
-            </Nav.Link>
-            <Nav.Link href="#link">
-              {" "}
-              <a className="list-item  aBootstrap" href="html/about-us.html">
-                CONTACT
-              </a>
-            </Nav.Link>
+          <Nav className=" bootnav" style={{ width: "100%" }}>
+            <NavHashLink
+              to="/#linkcontacto"
+              className="list-item abootnav aBootstrap"
+            >
+              INICIO
+            </NavHashLink>
+            <NavHashLink to="/#linkcontacto" className="list-item  aBootstrap">
+              NUESTRAS LANCHAS
+            </NavHashLink>
+            <NavHashLink to="/#linkcontacto" className="list-item  aBootstrap">
+              UBICACIÓN
+            </NavHashLink>
+            <NavHashLink to="/#linkcontacto" className="list-item  aBootstrap">
+              CONTACTO
+            </NavHashLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

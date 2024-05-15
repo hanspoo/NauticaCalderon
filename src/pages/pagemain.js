@@ -3,6 +3,7 @@ import Header from "../components/header";
 import MainComponent from "../components/maincomponent";
 import React from "react";
 import main from "../jspelado/main";
+import ClickToChat from "../components/utils/clicktochat";
 
 function PageMain() {
   React.useEffect(() => {
@@ -26,6 +27,17 @@ function PageMain() {
 
       <MainComponent></MainComponent>
 
+      <ClickToChat
+        numero="56975633454"
+        message="¡Hola! me gustaria consultar por una lancha"
+      >
+        {" "}
+        <img
+          alt="Chat on WhatsApp"
+          src="/Imgs/whatsapp.svg"
+          className="iconowsp"
+        ></img>
+      </ClickToChat>
       <Footer></Footer>
     </>
   );

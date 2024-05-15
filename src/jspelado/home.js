@@ -68,7 +68,7 @@ export function home() {
     if (scrolledPixs > offsetHeight + servicesHeight - windowHeight) {
       counter.forEach((count) => {
         function CountUpdate() {
-          let speed = 200;
+          let speed = 500;
           let addition = Number(count.dataset.target / speed);
           let target = Number(count.dataset.target);
           let initial = +count.textContent;
