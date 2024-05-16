@@ -33,11 +33,9 @@ export default function Footer() {
                 <a href="#fleet"> Nuestras Lanchas</a>
               </li>
               <li>
-                <a href="#">Información de Nosotros</a>
+                <a href="#linkinformacion">Información de Nosotros</a>
               </li>
-              <li>
-                <a href="#">Corporate Event</a>
-              </li>
+
               <li>
                 <a href="#">Ver los Testimonios</a>
               </li>

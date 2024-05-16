@@ -6,6 +6,7 @@ import Footer from "../components/footer";
 import ClickToChat from "../components/utils/clicktochat";
 import { string } from "yup";
 import ReactNavBar from "../components/reactnavbar";
+import SideBar from "../components/reactbo";
 
 export function BoatDetails({ bote }) {
   const casco = bote.materialCasco;
@@ -14,6 +15,7 @@ export function BoatDetails({ bote }) {
     <>
       {/* <NavBarBootstrap></NavBarBootstrap> */}
       <ReactNavBar></ReactNavBar>
+
       <ClickToChat
         numero="56975633454"
         message="¡Hola! me gustaria consultar por una lancha"

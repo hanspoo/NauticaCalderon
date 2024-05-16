@@ -32,6 +32,7 @@ export default function MainComponent(props) {
       </div>
       <Landing></Landing>
       <SelectBox></SelectBox>
+      <div id="linkinformacion"></div>
       <Info></Info>
       <div id="linklanchas" />
       <section className="fleet" id="fleet">

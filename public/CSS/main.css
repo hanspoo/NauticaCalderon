@@ -1381,8 +1381,69 @@ gmp-map {
   display: none;
   transition: margin 1s ease-out;
 }
-
-.expandedactivo {
+.nav-menu {
+  background-color: var(--footer);
+  width: 50%;
+  height: 100vh;
   display: flex;
-  transition: 1s ease-out;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.test {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.linknav {
+  display: inline-block;
+  padding: 8px 8px;
+  padding-bottom: 20px !important;
+  font-size: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-bottom: 1px dotted white;
+}
+
+.linknav:hover {
+  color: var(--main-color);
+}
+
+.ulnav {
+  padding: 25px !important;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .mlogo {
+    margin-left: 8em;
+  }
+
+  .test {
+    margin-right: 8em;
+  }
+}
+
+.f {
+  font-size: 13px;
+}
+
+.f:hover {
+  color: var(--main-color);
+}
+
+.ularreglo {
+  margin-bottom: 0;
 }

@@ -6,7 +6,7 @@ export default function NavBar() {
       </a>
       <i className="fa-solid fa-bars bars-icon burger-icon" />
       <div className="links scroll-event">
-        <ul className="main-list">
+        <ul className="main-list ularreglo" style={{ paddingLeft: "0" }}>
           <li>
             <a className="list-item active" href="./index.html">
               Inicio

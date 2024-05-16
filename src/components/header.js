@@ -7,14 +7,17 @@ export default function Header() {
             <i className="fa-solid fa-phone" />
             <span>
               {" "}
-              teléfono: <a href="tel:+56932082293">+56 9 3208 2293</a>
+              teléfono: <a href="tel:+56975633454">+56 9 7563 3454</a>
             </span>
           </div>
           <div className="Email">
             <i className="fa-solid fa-envelope" />
             <span>
               Email:
-              <a href="mailto:support@example.com">poowebcorp@gmail.com</a>
+              <a href="mailto:carlos.calderon.lanchas@gmail.com">
+                {" "}
+                carlos.calderon.lanchas@gmail.com
+              </a>
             </span>
           </div>
         </article>
