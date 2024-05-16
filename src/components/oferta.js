@@ -28,8 +28,8 @@ export default function Oferta() {
               llamar
               <span className="number">
                 {" "}
-                <a href="tel:+56932082293" style={{ color: "white" }}>
-                  +56 9 3208 2293
+                <a href="tel:+56975633454" style={{ color: "white" }}>
+                  +56 9 7563 3454
                 </a>
               </span>
             </span>

@@ -36,10 +36,14 @@ export default function Products(props) {
                       <i class="fa-solid fa-calendar-days m-1"></i>
                       <span> {d.año} </span>
                     </div>
-                    <div className="feets inf">
-                      <i className="fas fa-arrows-h m-1" />
-                      <span>{d.largo}</span>
-                    </div>
+
+                    {d.largo && (
+                      <div className="feets inf">
+                        <i className="fas fa-arrows-h m-1" />
+                        <span>{d.largo}</span>
+                      </div>
+                    )}
+
                     <div className="entertain inf">
                       <i className="far fa-columns m-1" />
                       <span>{d.info}</span>

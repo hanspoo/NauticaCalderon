@@ -1,4 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
+import data from "../data/boats.json";
 
 export default function Footer() {
   return (
@@ -46,39 +47,36 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col">
-            <h2>About Nevica</h2>
+            <h2>Nuestras naves</h2>
             <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Boat Fleet</a>
-              </li>
-              <li>
-                <a href="#">Parts Shop</a>
-              </li>
+              {data.map((d) => {
+                return (
+                  <li>
+                    <Link to={`/Listadebotes/${d.id}`}>
+                      {" "}
+                      <a href="#">{d.tittle}</a>{" "}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="col">
             <h2>Ponte en Contacto</h2>
             <div className="location data">
               <i className="fa-solid fa-location-dot" />
-              <span>Camino internacional, Pucón, Chile</span>
+              <span>Camino internacional 363, Pucón, Chile</span>
             </div>
             <div className="mail data">
               <i className="fa-solid fa-envelope" />
-              <a href="mailto:support@domain.com">poowebcorp@gmail.com</a>
+              <a href="mailto:support@domain.com">
+                carlos.calderon.lanchas@gmail.com
+              </a>
             </div>
             <div className="call data">
               <i className="fa-solid fa-headset" />
               <span>Phone:</span>{" "}
-              <a href="tel:+56932082293"> +56 9 3208 2293</a>
+              <a href="tel:+56975633454"> +56 9 7563 3454</a>
             </div>
             {/* <div className="social">
               <a href="#">
@@ -105,10 +103,7 @@ export default function Footer() {
 
       <section className="by-me">
         2024
-        <a
-          href="https://portfolio-ahmedfahiim.vercel.app/"
-          className="developer"
-        >
+        <a href="https://www.pooweb.cl/" className="developer">
           {" "}
           PooWeb
         </a>{" "}

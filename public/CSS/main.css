@@ -1342,3 +1342,47 @@ gmp-map {
 .abootnav {
   color: white;
 }
+
+.reactnav {
+  background-color: var(--footer);
+  padding: 25px !important;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.centernav {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.reactnavlinks {
+  color: white !important;
+}
+
+.burguer {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.expanded {
+  position: fixed;
+  justify-content: flex-start;
+  background-color: var(--footer);
+  padding: 25px;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  transition: margin 1s ease-out;
+}
+
+.expandedactivo {
+  display: flex;
+  transition: 1s ease-out;
+}

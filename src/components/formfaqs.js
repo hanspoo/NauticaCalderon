@@ -28,64 +28,53 @@ export default function FormFaqs() {
           <article className="FAQ-holder">
             <div className="question-holder">
               <span className="question">
-                <span>¿Como compro una lancha?</span>
-              </span>
-              <div className="answer">
-                <p>
-                  Quis nostrud exercitate laboridy aliquip duis irure sed dolor
-                  ipsum excpture fugiat estan veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex velit esse cillum dolore eu
-                  fugiat nulla pariatur.
-                </p>
-              </div>
-            </div>
-            <div className="question-holder">
-              <span className="question">
                 <span>
-                  {" "}
-                  ¿Que necesito para poder usar la lancha en una mole de agua?
+                  ¿Puedo ver como funciona la lancha o moto en el agua?
                 </span>
               </span>
               <div className="answer">
                 <p>
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life
-                  accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                  non cupidatat skateboard dolor brunch. Food truck quinoa
-                  nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                  aliqua put a bird on it squid single-origin coffee nulla
-                  assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                  beer labore wes anderson
+                  Si puedes, Envíanos un mensaje por cualquiera de los medios
+                  que estan en la página, para asi poder planear alguna visita
+                  para ver la lancha donde podrá incluso ser probada en el agua.
                 </p>
               </div>
             </div>
             <div className="question-holder">
               <span className="question">
-                <span> ¿Todas las lanchas tienen carro?</span>
+                <span> ¿Qué documentos debe tener una lancha en Chile?</span>
               </span>
               <div className="answer">
                 <p>
-                  truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                  tempor, sunt aliqua put a bird on it squid single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                  helvetica, craft beer labore wes anderson Anim pariatur cliche
-                  reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                  skateboard dolor brunch.
+                  Para las embarcaciones artesanales se debe presentar:
+                  Certificados de matrícula (a su nombre). Certificado de
+                  navegabilidad. Certificado de arqueo (sólo si la eslora de la
+                  embarcación es de 12 metros o más).
                 </p>
               </div>
             </div>
             <div className="question-holder">
               <span className="question">
-                <span>¿de que formas puedo realizar el pago de la flota?</span>
+                <span> ¿Qué licencia se necesita para manejar un bote?</span>
               </span>
               <div className="answer">
                 <p>
-                  Nliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                  skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                  eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on
-                  it squid single-origin coffee nulla assumenda shoreditch et.
-                  Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                  El carnet PNB (Patrón de Navegación Básica) es tu titulación.
+                  Este permiso te permitirá navegar hasta 5 millas de la costa
+                  en embarcaciones a motor de hasta 8 metros de eslora y sin
+                  límite de potencia. La edad mínima para obtener este carné es
+                  de 16 años y sirve como carné para motos de agua.
+                </p>
+              </div>
+            </div>
+            <div className="question-holder">
+              <span className="question">
+                <span>¿Qué embarcaciones no necesitan papeles en Chile?</span>
+              </span>
+              <div className="answer">
+                <p>
+                  Bajo los 10 HP, o no motorizada menor de 5 mts. de eslora: No
+                  requiere inscripción.
                 </p>
               </div>
             </div>

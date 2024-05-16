@@ -5,6 +5,7 @@
 
 .details {
   padding: 100px 0;
+  padding-bottom: 0 !important;
 }
 /* at mobile screens */
 @media (max-width: 767px) {
@@ -188,20 +189,22 @@
   position: relative;
   flex-basis: 45%;
   margin-bottom: 19px;
-  margin-left: 20px;
+
   transition: 0.3s;
 }
 @media (max-width: 767px) {
   .details .features .features-click .features li {
     flex-basis: 100%;
-    text-align: left;
+    text-align: center;
+    right: 9px;
+    margin-left: 20px;
   }
 }
 .details .features .features-click .features li::before {
   font-family: "Font Awesome 6 Free";
-  position: absolute;
+  position: relative;
   content: "\f058";
-  left: -20px;
+  right: 5px;
   color: green;
 }
 .details .features .reviews-click .review {
@@ -332,6 +335,7 @@
 }
 .details .seller-info .contact-seller {
   padding: 25px;
+  margin-bottom: 50px;
   background-color: #f2f6f7;
   position: relative;
 }

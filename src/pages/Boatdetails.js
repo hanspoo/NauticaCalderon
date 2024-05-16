@@ -4,11 +4,16 @@ import NavBar from "../components/navbar";
 import NavBarBootstrap from "../components/BootstrapNav";
 import Footer from "../components/footer";
 import ClickToChat from "../components/utils/clicktochat";
+import { string } from "yup";
+import ReactNavBar from "../components/reactnavbar";
 
 export function BoatDetails({ bote }) {
+  const casco = bote.materialCasco;
+  //   console.lo g(casco.value);
   return (
     <>
-      <NavBarBootstrap></NavBarBootstrap>
+      {/* <NavBarBootstrap></NavBarBootstrap> */}
+      <ReactNavBar></ReactNavBar>
       <ClickToChat
         numero="56975633454"
         message="¡Hola! me gustaria consultar por una lancha"
@@ -83,22 +88,29 @@ export function BoatDetails({ bote }) {
                   <span className="key">Marca:</span>
                   <span className="value">{bote.marca} </span>
                 </div>
-                <div className="feat">
-                  <span className="key">Material Casco:</span>
-                  <span className="value">{bote.materialCasco}</span>
-                </div>
+                {casco && (
+                  <div className="feat">
+                    <span className="key">Material Casco:</span>
+                    <span className="value">{bote.materialCasco}</span>
+                  </div>
+                )}
+
                 <div className="feat">
                   <span className="key">Año:</span>
                   <span className="value">{bote.año}</span>
                 </div>
                 <div className="feat">
-                  <span className="key">Modelo Motor:</span>
+                  <span className="key">Motor:</span>
                   <span className="value">{bote.modeloMotor}</span>
                 </div>
-                <div className="feat">
-                  <span className="key">Largo:</span>
-                  <span className="value">{bote.largo}</span>
-                </div>
+
+                {bote.largo && (
+                  <div className="feat">
+                    <span className="key">Largo:</span>
+                    <span className="value">{bote.largo}</span>
+                  </div>
+                )}
+
                 <div className="feat">
                   <span className="key">Horas De Uso:</span>
                   <span className="value">{bote.Horas}</span>
@@ -127,46 +139,13 @@ export function BoatDetails({ bote }) {
                 <div className="mt-4">
                   <p>{bote.descripcion}</p>
                 </div>
-                <div className="features-click item">
+                <div className="features-click item cambioalineacion">
                   <ul className="features flex-between">
                     <li>{bote.caracteristicas.carac1}</li>
                     <li>{bote.caracteristicas.carac2}</li>
                     <li>{bote.caracteristicas.carac3}</li>
                     <li>{bote.caracteristicas.carac4}</li>
-                    <li>{bote.caracteristicas.carac5}</li>
-                    <li>{bote.caracteristicas.carac6}</li>
-                    <li>{bote.caracteristicas.carac7}</li>
-                    <li>{bote.caracteristicas.carac8}</li>
                   </ul>
-                </div>
-                <div className="reviews-click item">
-                  <div className="review one">
-                    <h4>Johannes Kepler</h4>
-                    <span>24 Sep 2019</span>
-                    <ul className="stars">
-                      <li className="clicked">
-                        <i className="fa-solid fa-star" />
-                      </li>
-                      <li className="clicked">
-                        <i className="fa-solid fa-star" />
-                      </li>
-                      <li className="clicked">
-                        <i className="fa-solid fa-star" />
-                      </li>
-                      <li className="clicked">
-                        <i className="fa-solid fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa-solid fa-star" />
-                      </li>
-                    </ul>
-                    <p>
-                      Duis ante magna, aliquet sit amet sagittis vitae,
-                      tristique at lacus. Ut et accumsan turpis. Phasellus
-                      ornare, tortor ut congue imperdiet, mauris magna
-                      condimentum nulla, non malesuada mauris massa eu augue.
-                    </p>
-                  </div>
                 </div>
               </div>
             </article>
@@ -178,7 +157,7 @@ export function BoatDetails({ bote }) {
               </div>
               <div className="payment">
                 <h3>{bote.value}</h3>
-                <p>Included Taxes &amp; Checkup*</p>
+                <p>Pesos Chilenos</p>
               </div>
             </div>
             <div className="seller-data">
@@ -192,7 +171,7 @@ export function BoatDetails({ bote }) {
               <div className="number-social">
                 <span className="contact">Número de contacto </span>
                 <span>
-                  <a href="tel:+ (258) 403 7961" className="number ">
+                  <a href="+56975633454" className="number ">
                     +56 9 7563 3454
                   </a>
                 </span>
