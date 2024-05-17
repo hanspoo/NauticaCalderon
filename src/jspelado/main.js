@@ -3,7 +3,7 @@ export default function main() {
   // ---------------- landing Page change ---------------------//
   let textBox = document.querySelectorAll(".textbox");
   let activeBox = 0;
-  let imgs = ["url(../Imgs/Main.png)", "url(../Imgs/Main1.png)"];
+  let imgs = ["url(../Imgs/Main.jpg)", "url(../Imgs/Main1.jpg)"];
   let angles = document.querySelectorAll(".angles");
   let landing = document.querySelector(".landing");
   let activeImg = 0;
@@ -70,16 +70,16 @@ export default function main() {
   };
 
   // -------------------- scrollTop
-  let goUp = document.querySelector(".scroll-top");
+  // let goUp = document.querySelector(".scroll-top");
 
-  function scrollTop() {
-    if (window.scrollY >= 1000) {
-      goUp.classList.add("scrolling");
-    } else goUp.classList.remove("scrolling");
-    goUp.onclick = function () {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-  }
+  // function scrollTop() {
+  //   if (window.scrollY >= 1000) {
+  //     goUp.classList.add("scrolling");
+  //   } else goUp.classList.remove("scrolling");
+  //   goUp.onclick = function () {
+  //     window.scrollTo({ top: 0, behavior: "smooth" });
+  //   };
+  // }
   // -------------------- nav Scrolling
 
   let scrollItems = document.querySelectorAll(".scroll-event");

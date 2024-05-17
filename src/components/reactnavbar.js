@@ -42,11 +42,12 @@ export default function ReactNavBar() {
               UBICACIÓN
             </NavHashLink>
             <NavHashLink
-              to="/index.html#linkcontacto"
+              to="/#linkcontacto"
               className="list-item  aBootstrap linknav bloque"
             >
               CONTACTO
             </NavHashLink>
+            <a href="/#linkcontacto"> canguro</a>
           </ul>
         </div>
 
