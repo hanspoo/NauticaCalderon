@@ -561,9 +561,6 @@ header .container .data .phone {
   .landing nav .links.scrolling a {
     color: #fff;
   }
-  .landing nav .links a:hover {
-    text-decoration: line-through;
-  }
 }
 .landing nav .form {
   flex-basis: 20%;

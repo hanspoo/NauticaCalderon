@@ -42,8 +42,8 @@ export default function ReactNavBar() {
               UBICACIÓN
             </NavHashLink>
             <NavHashLink
-              to="/#linkcontacto"
-              className="list-item  aBootstrap linknav"
+              to="/index.html#linkcontacto"
+              className="list-item  aBootstrap linknav bloque"
             >
               CONTACTO
             </NavHashLink>
