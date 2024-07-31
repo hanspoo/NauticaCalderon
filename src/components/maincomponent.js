@@ -54,6 +54,7 @@ export default function MainComponent(props) {
       <Oferta></Oferta>
       <FormFaqs></FormFaqs>
       <Testimonies></Testimonies>
+      <a href="https://www.maxvision.cl/"></a>
     </>
   );
 }
