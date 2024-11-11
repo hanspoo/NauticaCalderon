@@ -199,7 +199,7 @@ export function BoatDetails({ bote }) {
             </div>
             <div className="contact-seller">
               <h3>Mensaje al vendedor</h3>
-              <form action="#">
+              <form action="https://formspree.io/f/mqkrjdlz" method="POST">
                 <input
                   type="text"
                   name="name"
