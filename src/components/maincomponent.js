@@ -1,10 +1,7 @@
 import SelectBox from "./selectbox.js";
-import News from "./news";
 import Testimonies from "./testimonies";
 import FormFaqs from "./formfaqs";
-import Services from "./services";
 import Oferta from "./oferta";
-import VideoSection from "./videosection";
 import Info from "./info";
 import Products from "./Boat";
 import React from "react";
@@ -54,7 +51,6 @@ export default function MainComponent(props) {
       <Oferta></Oferta>
       <FormFaqs></FormFaqs>
       <Testimonies></Testimonies>
-      <a href="https://www.maxvision.cl/"></a>
     </>
   );
 }
