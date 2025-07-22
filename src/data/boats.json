@@ -262,5 +262,31 @@
       "carac3": "Perfecta para primera moto de agua",
       "carac4": "Fabricada en el año 1996"
     }
+  },
+  {
+    "id": "bote9",
+    "imagen": "/Imgs/botes/bote8/imagen1.jpeg",
+    "detailImg1": "/Imgs/botes/bote8/imagen1.jpeg",
+    "detailImg2": "/Imgs/botes/bote8/imagen2.jpeg",
+    "detailImg3": "/Imgs/botes/bote8/imagen3.jpeg",
+    "detailImg4": "/Imgs/botes/bote8/imagen4.jpeg",
+    "detailImg5": "/Imgs/botes/bote8/imagen5.jpeg",
+    "detailImg6": "/Imgs/botes/bote8/imagen6.jpeg",
+    "tittle": "Chaparral 21 ft",
+    "value": "$ 42.000.000",
+    "duracion": "Per Day",
+    "personas": "10 Guests",
+    "bedrooms": "0",
+    "largo": null,
+    "info": "5.0 MPI Mercrusier, Pata Bravo 3",
+    "marca": "Chaparral",
+    "materialCasco": "",
+    "año": "Año 2008",
+    "modeloMotor": "5.0 MPI Mercrusier, Pata Bravo 3",
+    "Horas": "320 Hrs",
+    "tipoDeCombustible": "Bencina",
+    "horasDeUso": "324",
+    "descripcion": "Torre de Guaque Original Chaparral",
+    "caracteristicas": {}
   }
 ]
