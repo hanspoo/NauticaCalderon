@@ -22,7 +22,7 @@
     "Horas": "320 Hrs",
     "Carga": "700 kg",
     "pasajeros": "10",
-    "tipoDeCombustible": "Vencina",
+    "tipoDeCombustible": "Bencina",
     "horasDeUso": "3",
     "descripcion": "Lancha Chaparral de 21 pies con plataforma de baño, con torre de waike, bimini original, tapiz original, pintura de caso original, 2 helices de acero,  equipo de audio con 4 parlantes, carro doble eje galvanizado, carpa original Chaparral, ",
     "caracteristicas": {
@@ -220,7 +220,7 @@
     "Horas": "112 Hrs",
     "Carga": " 150 kg",
     "pasajeros": "12",
-    "tipoDeCombustible": "Vencina",
+    "tipoDeCombustible": "Bencina",
     "horasDeUso": "3",
     "descripcion": "La motocicleta de Agua Seadoo RXP 260 cuenta con un motor rotax de 1500 cc, con una pintura original, tiene para poner marcha atras ademas de disponer de un freno, una carpa original, un carro galvanizado de 1 eje para transportarla, es vencinera y es para hasta dos personas.",
     "caracteristicas": {
@@ -253,7 +253,7 @@
     "Horas": "127 Hrs",
     "Carga": "150 kg",
     "pasajeros": "2",
-    "tipoDeCombustible": "Vencina",
+    "tipoDeCombustible": "Bencina",
     "horasDeUso": "3",
     "descripcion": "La motocicleta de agua Kawasaki Jet Ski 2XI, con un motor de 760 cc , es apta para hasta dos personas,  y es vencinera.",
     "caracteristicas": {
@@ -266,22 +266,13 @@
   {
     "id": "bote9",
     "imagen": "/Imgs/botes/bote9/chaparral1.jpeg",
-    "detailImg1": "/Imgs/botes/bote9/chaparral10.jpeg",
-    "detailImg2": "/Imgs/botes/bote9/chaparral11.jpeg",
-    "detailImg3": "/Imgs/botes/bote9/chaparral12.jpeg",
-    "detailImg4": "/Imgs/botes/bote9/chaparral13.jpeg",
-    "detailImg5": "/Imgs/botes/bote9/chaparral14.jpeg",
-    "detailImg6": "/Imgs/botes/bote9/chaparral15.jpeg",
-    "detailImg7": "/Imgs/botes/bote9/chaparral16.jpeg",
-    "detailImg8": "/Imgs/botes/bote9/chaparral1.jpeg",
-    "detailImg9": "/Imgs/botes/bote9/chaparral2.jpeg",
-    "detailImg10": "/Imgs/botes/bote9/chaparral3.jpeg",
-    "detailImg11": "/Imgs/botes/bote9/chaparral4.jpeg",
-    "detailImg12": "/Imgs/botes/bote9/chaparral5.jpeg",
-    "detailImg13": "/Imgs/botes/bote9/chaparral6.jpeg",
-    "detailImg14": "/Imgs/botes/bote9/chaparral7.jpeg",
-    "detailImg15": "/Imgs/botes/bote9/chaparral8.jpeg",
-    "detailImg16": "/Imgs/botes/bote9/chaparral9.jpeg",
+    "detailImg1": "/Imgs/botes/bote9/chaparral13.jpeg",
+    "detailImg2": "/Imgs/botes/bote9/chaparral14.jpeg",
+    "detailImg3": "/Imgs/botes/bote9/chaparral16.jpeg",
+    "detailImg4": "/Imgs/botes/bote9/chaparral1.jpeg",
+    "detailImg5": "/Imgs/botes/bote9/chaparral2.jpeg",
+    "detailImg6": "/Imgs/botes/bote9/chaparral4.jpeg",
+    "detailImg7": "/Imgs/botes/bote9/chaparral7.jpeg",
 
     "tittle": "Chaparral 21 ft",
     "value": "$ 42.000.000",
@@ -297,7 +288,13 @@
     "Horas": "320 Hrs",
     "tipoDeCombustible": "Bencina",
     "horasDeUso": "324",
-    "descripcion": "Torre de Guaque Original Chaparral",
-    "caracteristicas": {}
+    "Carga": "700 kg",
+    "descripcion": "Se vende lancha Chaparral año 2008 en impecable estado, con solo 320 horas de uso. Equipada con motor Mercruiser 5.0 MPI y pata Bravo 3, ofrece un rendimiento potente y confiable. Su eslora de 21 pies la hace ideal tanto para paseos familiares como para actividades deportivas.",
+    "caracteristicas": {
+      "carac1": "Posee plataforma de baño",
+      "carac2": "Viene con equipo de audio incluido",
+      "carac3": "El tapiz y la pintura son originales",
+      "carac4": "Posee una torre para wakeboard"
+    }
   }
 ]
