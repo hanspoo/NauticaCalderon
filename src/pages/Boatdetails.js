@@ -173,7 +173,7 @@ export function BoatDetails({ bote }) {
               <div className="number-social">
                 <span className="contact">Número de contacto </span>
                 <span>
-                  <a href="+56975633454" className="number ">
+                  <a href="tel:+56975633454" className="number ">
                     +56 9 7563 3454
                   </a>
                 </span>
