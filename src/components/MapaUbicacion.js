@@ -11,6 +11,13 @@ export function MapaUbicacion({ lan, lon }) {
   window.addEventListener("resize", () =>
     setWidth(window.innerWidth > 800 ? 800 : 334)
   );
+
+  // Detect if user is on iOS
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const navUrl = isIOS
+    ? `http://maps.apple.com/?daddr=${lan},${lon}`
+    : `https://www.google.com/maps/dir/?api=1&destination=${lan},${lon}`;
+
   useEffect(() => {
     var container = L.DomUtil.get("myMap");
     if (container != null) {
@@ -35,7 +42,9 @@ export function MapaUbicacion({ lan, lon }) {
 
     L.Marker.prototype.options.icon = DefaultIcon;
     var marker = L.marker([lan, lon]).addTo(map);
-    // marker.bindPopup("<b>Náutica Calderón</b>").openPopup();
+    marker
+      .bindPopup(`<a href='${navUrl}'>Ir a Náutica Calderón</b>`)
+      .openPopup();
   });
   return (
     <div id="myMap" style={{ height: "320px", width: `${width}px` }}></div>
