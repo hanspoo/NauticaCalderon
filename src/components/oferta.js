@@ -1,26 +1,19 @@
+import { MapaUbicacion } from "./MapaUbicacion";
+
 export default function Oferta() {
   return (
     <section className="deal ">
       <div className="container">
-        <article className="day-deal flex-between">
+        <article className="day-deal flex-between p-2">
           <div id="conte" className=" w-100">
-            <gmp-map
-              center="-39.28743580079332, -71.94501382656382"
-              zoom="12"
-              map-id="DEMO_MAP_ID"
-            >
-              <gmp-advanced-marker
-                position="-39.28743580079332, -71.94501382656382"
-                title="My location"
-              ></gmp-advanced-marker>
-            </gmp-map>
+            <MapaUbicacion lan={-39.287412} lon={-71.945446} />
           </div>
           <article className="deal-content">
-            <span className="head">¿Donde Encontarnos?</span>
+            <span className="head">¿Donde Encontrarnos?</span>
             <p className="boat-name">Nuestra Ubicación</p>
             <p className="boat-data">
               País: Chile | Región: Araucanía | Comuna: Pucón | Dirección:
-              Camino internacional 363 | Nos encontramos detras de la Petrobras
+              Camino internacional 2173 | Nos encontramos detras de la Aramco
               entrando por el camino de tierra.
             </p>
             <i className="fas fa-phone-alt" />

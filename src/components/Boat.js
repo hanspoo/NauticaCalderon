@@ -9,31 +9,30 @@ export default function Products(props) {
         <article className="cards-holder">
           {data.map((d) => {
             return (
-              <div className="card ">
+              <div className="card " key={d.id}>
                 <Link to={`/Listadebotes/${d.id}`}>
                   <div className="img">
                     <img src={d.imagen} alt="Boat" />
                   </div>
-                  <div className="info flex-between p-3">
-                    <a>{d.tittle}</a>
-                    <div className="price">
-                      <span className="currency">{d.value}</span>
-                    </div>
+                  <div className="info flex-between p-3 text-black">
+                    <b>{d.tittle}</b>
+
+                    <span>{d.value}</span>
                   </div>
 
                   <div className="data flex-between p-3">
                     <div className="guest inf">
-                      <i class="fa-regular fa-copyright m-1"></i>
+                      <i className="fa-regular fa-copyright m-1"></i>
                       <span> {d.marca} </span>
                     </div>
 
                     <div className="guest inf">
-                      <i class="fa-solid fa-clock m-1"></i>
+                      <i className="fa-solid fa-clock m-1"></i>
                       <span> {d.Horas}</span>
                     </div>
 
                     <div className="beds inf">
-                      <i class="fa-solid fa-calendar-days m-1"></i>
+                      <i className="fa-solid fa-calendar-days m-1"></i>
                       <span> {d.año} </span>
                     </div>
 

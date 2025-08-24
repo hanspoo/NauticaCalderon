@@ -37,9 +37,6 @@ export default function Footer() {
               </li>
 
               <li>
-                <a href="#">Ver los Testimonios</a>
-              </li>
-              <li>
                 <a href="#linkcontacto">Ir al Contacto</a>
               </li>
             </ul>
@@ -63,7 +60,7 @@ export default function Footer() {
             <h2>Ponte en Contacto</h2>
             <div className="location data">
               <i className="fa-solid fa-location-dot" />
-              <span>Camino internacional 363, Pucón, Chile</span>
+              <span>Camino internacional 2173,Pucón, Chile</span>
             </div>
             <div className="mail data">
               <i className="fa-solid fa-envelope" />
