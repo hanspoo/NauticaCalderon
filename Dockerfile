@@ -1,7 +1,7 @@
 FROM node:alpine
 COPY . /app
 WORKDIR /app
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm run build 
 
 FROM nginx:1.28-alpine
