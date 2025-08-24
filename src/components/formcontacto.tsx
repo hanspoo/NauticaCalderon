@@ -32,7 +32,7 @@ export function FormContacto() {
   const handleServerResponse = (ok: boolean, msg: string) => {
     setServerState({ ok, msg });
   };
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const handleOnSubmit = (values: DatosEmail, actions: any) => {
     axios({
       method: "POST",
@@ -47,7 +47,7 @@ export function FormContacto() {
           "Hemos enviado su formulario, lo revisaremos a la brevedad."
         );
       })
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       .catch((error: any) => {
         console.log(JSON.stringify(error));
         actions.setSubmitting(false);
